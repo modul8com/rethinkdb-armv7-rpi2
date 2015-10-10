@@ -13,9 +13,9 @@ RUN apt-get update && apt-get install -y \
     python \
     wget
 
-RUN wget http://download.rethinkdb.com/dist/rethinkdb-2.1.5-2.tgz \
-    && tar -zxvf rethinkdb-2.1.5-2.tgz \
-    && cd rethinkdb-2.1.5-2 \
+RUN wget http://download.rethinkdb.com/dist/rethinkdb-latest.tgz \
+    && tar -zxvf rethinkdb-latest.tgz \
+    && cd rethinkdb-latest \
     && ./configure --with-system-malloc --allow-fetch \
     && make \
     && make install
