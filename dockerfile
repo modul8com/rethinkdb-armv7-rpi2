@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN wget http://download.rethinkdb.com/dist/rethinkdb-latest.tgz \
     && tar -zxvf rethinkdb-latest.tgz \
-    && cd rethinkdb-latest \
+    && cd rethinkdb-* \
     && ./configure --with-system-malloc --allow-fetch \
     && make \
     && make install
